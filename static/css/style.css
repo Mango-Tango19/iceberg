@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
 }
 
+
+/*First page*/
 .page-1 {
     height: 100vh;
     width: 100%;
@@ -26,6 +28,23 @@
     margin-left: 46%;
     color: #3d508a;
 }
+
+
+.header-page-1 {
+    box-sizing: border-box;
+    text-align: left;
+    color: #0d319c;
+    padding-top: 3em;
+    padding-left: 3em;
+    font-size: 1.5em;
+    min-height: 100vh;
+}
+
+.header-page-1 > h1
+ {
+    max-width: 55vw;
+}
+
 
 div.goal-wrapper {
     position: absolute;
@@ -68,6 +87,7 @@ div.goal-wrapper {
 
 }
 
+/*Circles animation*/
 
 @-webkit-keyframes pulse {
     0% {
@@ -148,14 +168,55 @@ div.goal-wrapper.goal-4 > .goal-title {
     }
     }
     
-
+/*Second-page*/
 .page-2 {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-image: url('../img/BG/BG2.png');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+
+.header-page-2 {
+    color: white;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-size: 4em;
+    letter-spacing: -1px;
+    font-weight: 300;
+    font-family: "Gotham Pro";
+    text-align: center;
+    padding-top: 13%;
+}
+
+
+.crystal {
+    position: absolute;
+
+}
+
+.crystal.crystal-1 {
+    right: 0;
+    top: 0.1em;
+}
+
+.crystal.crystal-2 {
+    left: 6em;
+    top: 2em;
+}
+
+.crystal.crystal-3 {
+    left: 12%;
+    top: 20em;
+}
+
+.crystal.crystal-4 {
+    right: 23%;
+    top: 28em;
+}
+
+/*Page 3*/
 
 .page-3 {
     height: 100vh;
@@ -165,20 +226,6 @@ div.goal-wrapper.goal-4 > .goal-title {
     background-position: center;
 }
 
-
-.header-page-1 {
-    box-sizing: border-box;
-    text-align: left;
-    color: #0d319c;
-    padding-top: 3em;
-    padding-left: 3em;
-    font-size: 1.5em;
-    min-height: 100vh;
-}
-
-.header-page-1 > h1 {
-    max-width: 55vw;
-}
 
 
 
