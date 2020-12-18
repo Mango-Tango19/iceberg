@@ -3,29 +3,49 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
     /*font-family: 'Open Sans', sans-serif;*/
 }
 
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(to bottom, #212292 80%, #060744 100%);
+    /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
+    }
+
 
 /*First page*/
-.page-1 {
+/* .page-1 {
     height: 100vh;
-    width: 100%;
-    background-image:
-    url('../img/page1_bottom/Arrow.png'),  
-    url('../img/page1_bottom/Ellipse.png'),
-    url('../img/page1_bottom/Rectangle.png'),
-    url('../img/BG/BG1.png'); 
-    background-size: 5%, 20%, 50%, cover;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 50% 94%, 50% 104%, 50% 118%, center;
     position: relative;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+} */
+section.page {
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between  ;
 }
 
+section.page > img.bg{
+    max-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% -19em;
+    z-index: -100;
+
+}
+
+
 .title-page-1 {
-    color: white;
-    margin-top: -7em;
-    margin-left: 46%;
+    z-index: 1000;
     color: #3d508a;
 }
 
@@ -34,10 +54,12 @@
     box-sizing: border-box;
     text-align: left;
     color: #0d319c;
+    font-size: 1.5em;
     padding-top: 3em;
     padding-left: 3em;
-    font-size: 1.5em;
     min-height: 100vh;
+    width: 100vw;
+    z-index: 100;
 }
 
 .header-page-1 > h1
@@ -54,18 +76,18 @@ div.goal-wrapper {
 }
 
 .goal-1 {
-    top: 54%;
+    top: 35%;
     left: 24%;
 }
 
 .goal-2 {
-    top: 73%;
+    top: 53%;
     left: 44%;
 
 }
 
 .goal-3 {
-    top: 71%;
+    top: 51%;
     right: 17%;
 }
 
@@ -138,7 +160,7 @@ div.goal-wrapper {
 
 .goal-4 {
 
-    top: 22%;
+    top: 3%;
     right: 37%;
 }
 
@@ -169,63 +191,144 @@ div.goal-wrapper.goal-4 > .goal-title {
     }
     
 /*Second-page*/
-.page-2 {
+
+section.page-2 {
     height: 100vh;
-    width: 100vw;
-    background-image: url('../img/BG/BG2.png');
-    background-size: cover;
-    background-position: center;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between; 
+} 
+
+
+div.moving-wrapper-page-2,
+div.moving-wrapper-page-3 {
     position: relative;
+} 
+
+
+/* div.elements-wrapper-page-1 {
+    position: absolute;
+    border: solid 2px green;
+} */
+
+img.bg-2{
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% -100%;
+    z-index: -100;
+
 }
 
 .header-page-2 {
     color: white;
     box-sizing: border-box;
     min-height: 100vh;
+    width: 100vw;
     font-size: 4em;
     letter-spacing: -1px;
     font-weight: 300;
     font-family: "Gotham Pro";
     text-align: center;
-    padding-top: 13%;
 }
+
 
 
 .crystal {
     position: absolute;
-
+    z-index: -1;
 }
 
+
 .crystal.crystal-1 {
-    right: 0;
-    top: 0.1em;
+    right: -2em;
+    top: -8em;
 }
 
 .crystal.crystal-2 {
-    left: 6em;
-    top: 2em;
+    left: 10em;
+    top: -5em;
 }
 
 .crystal.crystal-3 {
-    left: 12%;
-    top: 20em;
+    left: 20%;
+    top: 10em;
 }
 
 .crystal.crystal-4 {
-    right: 23%;
-    top: 28em;
+    right: 35%;
+    top: 22em;
 }
+
 
 /*Page 3*/
 
-.page-3 {
+section.page-3 {
     height: 100vh;
-    width: 100%;
-    background-image: url('../img/BG/BG3.png');
-    background-size: cover;
-    background-position: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+} 
+
+.header-page-3 {
+    color: white;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+    font-size: 2em;
+    letter-spacing: -1px;
+    font-weight: 300;
+    font-family: "Gotham Pro";
+
 }
 
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+.slider-inner {
+    width: 300%;
+    display: flex;
+    transition: 0.5s all;
+}
+.slide {
+   position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -1000;
+}
 
+.slider-controller {
+    position: relative;
+    bottom: 15em;
+    left: 17em;
+}
+
+.solid {
+    background: #d1eaff;
+    height: 1em;
+    width: 60vw;
+    position: relative;
+}
+
+.scale-indicator {
+    /* position: relative;
+    bottom: -4em; */
+    background:  #89bfeb;
+    border: solid 3px white;
+    position: relative;
+    height: 4em;
+    width: 6vw;
+    position: relative;
+    bottom: -2em;
+    z-index: 9999;
+    transition: 0.5s all;
+}
 
 
