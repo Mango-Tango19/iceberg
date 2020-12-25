@@ -305,30 +305,32 @@ section.page-3 {
 }
 
 .slider-controller {
+    bottom: 9em;
+    left: 20vw;
+    display: inline-block;
     position: relative;
-    bottom: 15em;
-    left: 17em;
 }
 
 .solid {
     background: #d1eaff;
     height: 1em;
     width: 60vw;
-    position: relative;
 }
 
 .scale-indicator {
-    /* position: relative;
-    bottom: -4em; */
+    position: relative;
+    bottom: 2.5em;
+    left: -1em;
+     /*
+    bottom: -4em; 
     background:  #89bfeb;
     border: solid 3px white;
     position: relative;
     height: 4em;
     width: 6vw;
-    position: relative;
     bottom: -2em;
     z-index: 9999;
     transition: 0.5s all;
+    cursor: move;
+} */
 }
-
-
