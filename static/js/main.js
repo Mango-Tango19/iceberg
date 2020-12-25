@@ -28,15 +28,6 @@ crystall.onmousedown = function(e) {
         if (newLeft > rightEdge) {
           newLeft = rightEdge;
         }
-        
-        // else if ( scale.offsetWidth/4 < newLeft < (scale.offsetWidth/4)*3 ) {
-        //     newLeft = scale.offsetWidth/2;
-        // }
-
-        // else if (newLeft >= (scale.offsetWidth/4)*3) {
-        //     newLeft = scale.offsetWidth;
-        // }
-
         indicator.style.left = newLeft + 'px';
       }
 
@@ -113,7 +104,6 @@ function slideNext() {
         indicatorOffset += (+scaleWidth.slice(0, scaleWidth.length-2))/2;
     }
     sliderInner.style.transform = `translateX(-${slideOffset}px)`;
-
     indicator.style.transform = `translateX(${indicatorOffset}px)`;//NaN
     
 }

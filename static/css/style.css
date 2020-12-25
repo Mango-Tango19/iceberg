@@ -267,12 +267,11 @@ img.bg-2{
 /*Page 3*/
 
 section.page-3 {
-    height: 100vh;
+    height: 86vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
- 
 } 
 
 .header-page-3 {
@@ -305,10 +304,11 @@ section.page-3 {
 }
 
 .slider-controller {
-    bottom: 9em;
-    left: 20vw;
-    display: inline-block;
     position: relative;
+    display: inline-block;
+    bottom: 2em;
+    left: 20vw;
+   
 }
 
 .solid {
@@ -319,6 +319,7 @@ section.page-3 {
 
 .scale-indicator {
     position: relative;
+    display: inline-block;
     bottom: 2.5em;
     left: -1em;
      /*
