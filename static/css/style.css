@@ -297,11 +297,134 @@ section.page-3 {
     transition: 0.5s all;
 }
 .slide {
-   position: relative;
     width: 100%;
     height: 100vh;
     z-index: -1000;
 }
+
+.slide-header {
+    color: white;
+    font-size: 2em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+}
+
+.slide > div.slide-pics {
+    position: relative;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+.row-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.row-1 .pic {
+    display: flex;
+    justify-content: center;
+}
+
+.row-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.pic {
+    display: flex; 
+    flex-direction: column;
+}
+
+.pic > .pic-title,
+.pic > .pic-image {
+    display: flex;
+    justify-content: center;
+}
+.pic-title {
+    flex-direction: column;
+    padding-bottom: 1em;
+
+}
+
+.pic-title > .number,
+.pic-title > .title {
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.beta .pic-image > img {
+    height: 4em;
+}
+
+
+
+.text_box {
+    display: flex;
+    color: white;
+    font-size: 1.2em;
+    align-items: center;
+}
+
+.text_box .text {
+    border: solid 2px white;
+    padding: 2em 3em;
+    
+}
+
+/*slide 2*/
+
+.slide > div.slide-pics.slide-2 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+div.slide-2 .row-wrapper .row-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.slide-2 .row-wrapper .row-1 .title-2 .title,
+div.slide-2 .row-wrapper .row-1 .title-3 .title { 
+    width: 4em;
+    font-size: 1.5em;
+}
+
+div.slide-2 .row-wrapper .row-1 .pic .pic-title .title {
+    font-size: 1.5em;
+}
+
+
+div.title-2,
+div.title-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.slide-2 .row-wrapper .row-1 .beta {
+    flex-grow: 3;
+}
+
+
+.slide-2 .row-wrapper .row-1 .title-2,
+.slide-2 .row-wrapper .row-1 .title-3 {
+    flex-grow: 2;
+    justify-content: space-around;
+}
+
+div.slide-2 .row-wrapper .row-3 {
+    display: flex;
+    margin: auto;
+}
+
+/*slider*/
 
 .slider-controller {
     position: relative;
